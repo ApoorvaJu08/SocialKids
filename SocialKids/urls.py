@@ -17,11 +17,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from web_app.views import signup_view, login_view
+from web_app.views import signup_view, login_view, post_view, feed_view, like_view
 
 urlpatterns = [
-    # url(r'^post/', post_view),
-    # url(r'^feed/', feed_view),
+    url(r'^like/', like_view),
+    url(r'^feed/', feed_view),
+    url(r'^post/', post_view),
     url(r'^login/', login_view),
     url(r'^$', signup_view),
     url(r'^admin/', admin.site.urls),

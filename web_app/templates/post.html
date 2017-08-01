@@ -1,34 +1,67 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Social Kids</title>
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Noto+Sans|Bellefair|Titillium+Web" rel="stylesheet">
+
+  <!--for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- for ext. css file -->
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/post.css' %}"/>
+
 </head>
 <body>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-3">
-		</div>
-		
-		<div class="col-md-6">
-			<form method="POST" enctype="multipart/form-data">
-      		{% csrf_token %}
-      		{{ form }}
-      			<input type="submit" class="btn btn-default" value="Add a picture">
-   			</form>
-   			{% for post in posts %}
-				<h3> 
-    				Posted by: {{ post.user.username }}
-    			</h3>
-    			<img src="{{ post.image_url }}">
-    			<span>
-    				{{ post.caption }}
-    			</span>
-			{% endfor %}
-		</div>
-		
-		<div class="col-md-3">
-		</div>
-</div>
+  <div class="container-fluid">
+        <!-- body starts here -->
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-3 col-md-offset-2">
+                <div class="PostBox">
+                    <div class="sub_heading">
+                        {{Date}}
+                    </div>    
+                    <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form }}      
+                        <div class="info">
+                            <input type="submit" class="btn btn-default" value="Add a picture">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3">
+                
+            </div>    
+        </div>
+        <!-- footer starts here -->
+        <footer class="fo">
+            <ul class="foo">
+                <li class="fooo">About Us</li>
+                <li class="fooo">Support</li>
+                <li class="fooo">Blog</li>
+                <li class="fooo">Press</li>
+                <li class="fooo">API</li>
+                <li class="fooo">Jobs</li>
+                <li class="fooo">Privacy</li>
+                <li class="fooo">Terms</li>
+                <li class="fooo">Directory</li>
+                <li class="fooo">Language</li>
+                <li class="fooo" class="copy">© 2017 Social Kids</li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

@@ -22,3 +22,17 @@ class SessionModel(DateTimeModel):
 
     def create_token(self):
         self.session_token = uuid4()
+
+
+class PostModel(DateTimeModel):
+    user = models.ForeignKey(SignUpModel)
+    image = models.FileField(upload_to='user_images')
+    image_url = models.CharField(max_length=255)
+    caption = models.CharField(max_length=240)
+
+
+class LikeModel(DateTimeModel):
+    user = models.ForeignKey(SignUpModel)
+    post = models.ForeignKey(PostModel)
+
+

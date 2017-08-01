@@ -4,8 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Social Kids</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Noto+Sans|Bellefair|Titillium+Web" rel="stylesheet">
+
+	<!--for icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- for ext. css file -->
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/feed.css' %}"/>
+
 </head>
 <body>
-
+	<div class="container-fluid">
+        <!-- body starts here -->
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-4">
+                <div class="FeedCol">
+                    <div class="heading">
+                        <div class="col-md-1">
+                        	Feed
+                        </div>
+                        <div class="col-md-1 col-md-offset-2">
+                        	<button type="submit">Post</button>
+                        </div>
+                    </div>
+                    <div class="content">
+                    	{% for post in posts %}
+                    		<h3>
+                    			{{ post.user.username }}
+                    		</h3>
+                    		<div class="image">
+                    			<img src=" {{ post.image_url }} ">
+                    		</div>
+                    		<div class="caption">
+                    			{{ post.caption }}
+                    		</div>
+                    		<div class="like no_of_comment">
+                    		
+                    		</div>
+                    		<div class="make_comment">
+                    		
+                    		</div>
+                    		<div class="comments_on_post">
+                    		
+                    		</div>
+                    	{% endfor %}
+                    </div>
+                </div>
+                <p id="app"><a href="#" id="app">Get the app</a></p>
+            </div>
+            <div class="col-md-4">
+                
+            </div>    
+        </div>
+        <!-- footer starts here -->
+        <footer class="fo">
+            <ul class="foo">
+                <li class="fooo">About Us</li>
+                <li class="fooo">Support</li>
+                <li class="fooo">Blog</li>
+                <li class="fooo">Press</li>
+                <li class="fooo">API</li>
+                <li class="fooo">Jobs</li>
+                <li class="fooo">Privacy</li>
+                <li class="fooo">Terms</li>
+                <li class="fooo">Directory</li>
+                <li class="fooo">Language</li>
+                <li class="fooo" class="copy">© 2017 Social Kids</li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

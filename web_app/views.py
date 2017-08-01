@@ -2,10 +2,19 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render, redirect
-from forms import SignUpForm, LoginForm
-from models import SignUpModel, SessionModel
+from forms import SignUpForm, LoginForm, PostForm, LikeForm
+from models import SignUpModel, SessionModel, PostModel, LikeModel
 from datetime import datetime
 from django.contrib.auth.hashers import make_password, check_password
+from imgurpython import ImgurClient
+from SocialKids.settings import BASE_DIR
+
+'''
+    imgur
+    client-id-->    3ff9d37f4d24f68
+    client-secret-->    7f139235b30f2a6104cc719f2256aafe2109a291
+    client-name-->  Social Kids
+'''
 
 # Create your views here.
 
@@ -48,7 +57,7 @@ def login_view(request):
                     token = SessionModel(user=user)
                     token.create_token()
                     token.save()
-                    response = redirect('feed.html')
+                    response = redirect('/feed/')
                     response.set_cookie(key='session_token', value=token.session_token)
                     return response
                 else:
@@ -69,3 +78,53 @@ def check_validation(request):
             return session_auth.user
         else:
             return None
+
+
+def post_view(request):
+    user = check_validation(request)
+    client_id = '3ff9d37f4d24f68'
+    client_secret = '7f139235b30f2a6104cc719f2256aafe2109a291'
+
+    if user:
+        form = None
+        if request.method == 'GET':
+            form = PostForm()
+        elif request.method == 'POST':
+            form = PostForm(request.POST, request.FILES)
+            if form.is_valid():
+                image = form.cleaned_data('image')
+                caption = form.cleaned_data('caption')
+
+                post = PostModel(user=user, image=image, caption=caption)
+                path = str(BASE_DIR + post.image.url)
+                client = ImgurClient(client_id, client_secret)
+                post.image_url = client.upload_from_path(path, anon=True)['link']
+                post.save()
+        return render(request, 'post.html', {'form': form})
+    else:
+        return redirect('/login/')
+
+
+def feed_view(request):
+    user = check_validation(request)
+    if user:
+        posts = PostModel.objects.all().order_by('created_on')
+        return render(request, 'feed.html', {'posts': posts})
+    else:
+        return redirect('/login/')
+
+
+def like_view(request):
+    user = check_validation(request)
+    if user and request.method == 'POST':
+        form = LikeForm(request.POST)
+        if form.is_valid():
+            post_id = form.cleaned_data.get('post').id
+            existing_like = LikeModel.objects.filter(post_id=post_id, user=user)
+            if not existing_like:
+                LikeModel.objects.create(post_id=post_id, user=user)
+            else:
+                existing_like.delete()
+            return redirect('/feed/')
+    else:
+        return redirect('/login/')

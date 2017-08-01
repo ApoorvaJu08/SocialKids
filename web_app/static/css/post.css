@@ -1,0 +1,45 @@
+body{
+    background-image: url("kidsPic.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.PostBox{
+    background-color: white;
+    margin: 50px 30px 0px 30px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.sub_heading{
+    padding: 0px;
+    color: silver;
+    font-size: 20px;
+    font-family: 'Bellefair';
+}
+.info{
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Titillium Web';           
+}
+.fo{
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    float: left;
+    margin-left: -20px;
+}
+.foo, .fooo{
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-right: 16px;
+    text-align: center;
+}      
+.fooo{
+    cursor: pointer;
+}
+.copy{
+    margin-left: 100px;
+}
