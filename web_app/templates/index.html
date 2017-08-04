@@ -41,17 +41,17 @@
                     <form method="post">
                     {% csrf_token %}    
                         <div class="info">
-                            <input type="text" placeholder="Enter Email" name="email" required value={{ email }}>
+                            <input type="text" placeholder="Enter Email" name="email" required value="{{ email }}">
                         </div>
                         <div class="info">
-                            <input type="text" placeholder="Full Name" name="name" required value={{ name }}>
+                            <input type="text" placeholder="Full Name" name="name" required value="{{ name }}">
                             <!-- <input type="checkbox" checked="checked"> Remember me -->
                         </div>
                         <div class="info">
-                            <input type="text" placeholder="Username" name="username" required value={{ username }}>
+                            <input type="text" placeholder="Username" name="username" required value="{{ username }}">
                         </div>
                         <div class="info">
-                            <input type="password" placeholder="Enter Password" name="password" required value={{ password }}>
+                            <input type="password" placeholder="Enter Password" name="password" required value="{{ password }}">
                         </div>
                         <div class="info">
                             <button type="submit">Sign Up</button>

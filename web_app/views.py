@@ -73,7 +73,7 @@ def login_view(request):
 
 def check_validation(request):
     if request.COOKIES.get('session_token'):
-        session_auth = SessionModel.objects.filter(session_token=request.COOKIES.get('session_token').first())
+        session_auth = SessionModel.objects.filter(session_token=request.COOKIES.get('session_token')).first()
         if session_auth:
             return session_auth.user
         else:
@@ -81,25 +81,26 @@ def check_validation(request):
 
 
 def post_view(request):
+    DIR = "E:\Background"
     user = check_validation(request)
     client_id = '3ff9d37f4d24f68'
     client_secret = '7f139235b30f2a6104cc719f2256aafe2109a291'
 
     if user:
-        form = None
-        if request.method == 'GET':
-            form = PostForm()
-        elif request.method == 'POST':
+        if request.method == 'POST':
             form = PostForm(request.POST, request.FILES)
             if form.is_valid():
-                image = form.cleaned_data('image')
-                caption = form.cleaned_data('caption')
+                image = form.cleaned_data['image']
+                caption = form.cleaned_data['caption']
 
                 post = PostModel(user=user, image=image, caption=caption)
-                path = str(BASE_DIR + post.image.url)
+                path = DIR + "\\" + str(post.image.url)
                 client = ImgurClient(client_id, client_secret)
                 post.image_url = client.upload_from_path(path, anon=True)['link']
                 post.save()
+                return redirect('/feed/')
+        else:
+            form = PostForm()
         return render(request, 'post.html', {'form': form})
     else:
         return redirect('/login/')
@@ -108,7 +109,12 @@ def post_view(request):
 def feed_view(request):
     user = check_validation(request)
     if user:
-        posts = PostModel.objects.all().order_by('created_on')
+        posts = PostModel.objects.all().order_by('-created_on')
+
+        for post in posts:
+            existing_like = LikeModel.objects.filter(post_id=post.id, user=user).first()
+            if existing_like:
+                post.has_liked = True
         return render(request, 'feed.html', {'posts': posts})
     else:
         return redirect('/login/')

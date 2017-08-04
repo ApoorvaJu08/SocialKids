@@ -40,10 +40,10 @@
                     <form method="post">
                     {% csrf_token %}     
                         <div class="info">
-                            <input type="text" placeholder="Username" name="username" required value={{ username }}>
+                            <input type="text" placeholder="Username" name="username" required value="{{ username }}">
                         </div>
                         <div class="info">
-                            <input type="password" placeholder="Enter Password" name="password" required value={{ password }}>
+                            <input type="password" placeholder="Enter Password" name="password" required value="{{ password }}">
                         </div>
                         <div class="info">
                             <button type="submit">Login</button>
@@ -55,7 +55,7 @@
                 </div><br><br>
                 <div class="new_box">
                     Don't have an account?
-                    <a href="/signup">Sign Up</a>
+                    <a href="/">Sign Up</a>
                 </div>
                 <p id="app"><a href="#" id="app">Get the app</a></p>
             </div>

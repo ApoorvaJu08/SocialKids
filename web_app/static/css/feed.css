@@ -1,35 +1,60 @@
-.FeedCol{
-    background-color: white;
-    margin: 50px 30px 0px 30px;
-    padding: 20px;
+.header ul{
+    list-style-type: none;
+    margin: 0px 0px 0px -15px;
+    padding: 0;
+    /*overflow: hidden;*/
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.4px solid #eee; 
+}
+.header li a{
+    display: block;
+    color: #000;
     text-align: center;
-    border: 0.2px solid #ccc;
-    /*box-sizing: border-box;*/
+    padding: 14px 16px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 38px;
+    cursor: pointer;
+}
+.header ul li a:hover{
+    background-color: #eee;
 }
 .heading{
     font-size: 30px;
     font-style: bold;
     font-family: 'Pacifico';
-}
-.sub_heading{
-    padding: 0px;
-    color: silver;
-    font-size: 20px;
-    font-family: 'Bellefair';
-}
-.info{
-    margin: 10px;
-    padding: 5px;
-    font-family: 'Titillium Web';           
-}
-.new_box{
-    background-color: white;
-    margin: 0px 30px 0px 30px;
-    padding: 20px;
     text-align: center;
-    border: 1px solid #ccc;
-    box-sizing: border-box; 
-    font-family: 'Titillium Web';  
+    margin: 80px 30px 0px 30px;
+    padding: 20px;
+}
+.post{
+    float: right;
+    margin: 50px 30px 0px 30px;
+    padding: 20px;
+}
+.FeedCol{
+    background-color: white;
+    margin: 50px 30px 0px 30px;
+    padding: 20px;
+    border: 0.2px solid #ccc;
+    box-sizing: border-box;
+}
+#content{
+    text-align: left;
+}
+.line{
+    margin: 10px -20px 10px -20px;
+}
+#images{
+    max-width: 628px;
+    height: auto;
+}
+#clicks{
+    width: 628px;
+    height: auto;
 }
 #app{
     margin: 0px 30px 0px 30px;
@@ -39,7 +64,7 @@
     color: white;
 }
 .fo{
-    position: absolute;
+    position: relative;
     bottom: 0px;
     background-color: white;
     display: block;

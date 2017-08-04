@@ -17,7 +17,7 @@ class SignUpModel(DateTimeModel):
 
 class SessionModel(DateTimeModel):
     user = models.ForeignKey(SignUpModel)
-    session_token = models.Charfield(max_length=255)
+    session_token = models.CharField(max_length=255)
     is_valid = models.BooleanField(default=True)
 
     def create_token(self):
@@ -26,9 +26,14 @@ class SessionModel(DateTimeModel):
 
 class PostModel(DateTimeModel):
     user = models.ForeignKey(SignUpModel)
-    image = models.FileField(upload_to='user_images')
+    image = models.FileField(upload_to='user_images/')
     image_url = models.CharField(max_length=255)
     caption = models.CharField(max_length=240)
+    has_liked = False
+
+    @property
+    def like_count(self):
+        return len(LikeModel.objects.filter(post=self))
 
 
 class LikeModel(DateTimeModel):

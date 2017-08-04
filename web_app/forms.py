@@ -10,17 +10,17 @@ class SignUpForm(forms.ModelForm):
 
 
 #akjsbfkj
-class LoginForm(forms.ModelForm):
-    class Meta:
-        model = SignUpModel
-        fields = ['username', 'password']
+class LoginForm(forms.Form):
+    username = forms.CharField(max_length=255)
+    password = forms.CharField(max_length=255)
+    fields = ['username', 'password']
 
 
 # c
 class PostForm(forms.ModelForm):
     class Meta:
         model = PostModel
-        fields = ['user', 'image', 'image_url', 'caption']
+        fields = ['image', 'caption']
 
 
 # d
