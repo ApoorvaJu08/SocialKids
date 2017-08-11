@@ -23,7 +23,7 @@ body{
     font-family: 'Titillium Web';           
 }
 .fo{
-    position: relative;
+    position: absolute;
     bottom: 0px;
     background-color: white;
     display: block;

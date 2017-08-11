@@ -35,9 +35,18 @@ class PostModel(DateTimeModel):
     def like_count(self):
         return len(LikeModel.objects.filter(post=self))
 
+    @property
+    def comments(self):
+        return CommentModel.objects.filter(post=self).order_by('created_on')
+
 
 class LikeModel(DateTimeModel):
     user = models.ForeignKey(SignUpModel)
     post = models.ForeignKey(PostModel)
 
+
+class CommentModel(DateTimeModel):
+    user = models.ForeignKey(SignUpModel)
+    post = models.ForeignKey(PostModel)
+    comment_text = models.TextField(max_length=512)
 
