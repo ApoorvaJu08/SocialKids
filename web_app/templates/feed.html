@@ -24,9 +24,16 @@
 <body>
 	<div class="container-fluid">
         <nav class="header" role="navigation">
-        	<ul>
-        		<li><a href="#"> Social Kids </a></li>
-        	</ul>
+        	<div class="row">
+        		<div class="col-md-4 col-md-offset-3">
+        			<a href="#" class="title"> Social Kids </a>
+        		</div>	
+        		<div class="col-md-3 logout_ico">
+        			<form method="post" action="/logout/">
+        				<a href="/logout"><i class="fa fa-sign-out" type="submit"></i></a>
+        			</form>
+        		</div>
+        	</div>
         </nav>
         <!-- body starts here -->
         <div class="row">

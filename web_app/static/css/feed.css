@@ -1,4 +1,4 @@
-.header ul{
+.header{
     list-style-type: none;
     margin: 0px 0px 0px -15px;
     padding: 0;
@@ -10,20 +10,34 @@
     z-index: 1;
     border-bottom: 0.4px solid #eee; 
 }
-.header li a{
+.title{
     display: block;
     color: #000;
-    text-align: center;
+    /*text-align: center;*/
     padding: 14px 16px;
+    /*margin-left: 200px;*/
     font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 38px;
+    font-size: 28px;
     cursor: pointer;
 }
-.header ul li a:hover{
-    background-color: #eee;
+.title:hover{
+    color: purple;
+}
+.logout_ico{
+    display: inline;
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+    /*margin-left: 300px;*/
+}
+.logout_ico a{
+    color:black;
+}
+.logout_ico a:hover{
+    color: white;
+    background-color: black;
 }
 .heading{
-    font-size: 30px;
+    font-size: 20px;
     font-style: bold;
     font-family: 'Pacifico';
     text-align: center;

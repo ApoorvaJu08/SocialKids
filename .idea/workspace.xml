@@ -2,17 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ae4563-df27-4685-923a-bdefc8d6b895" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_app/templates/logout.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests-2.18.2.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests-2.18.2.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests-2.18.2.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests-2.18.2.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests-2.18.2.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests-2.18.2.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests-2.18.2.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/__version__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/help.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/packages.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SocialKids/settings.py" afterPath="$PROJECT_DIR$/SocialKids/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SocialKids/urls.py" afterPath="$PROJECT_DIR$/SocialKids/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/admin.py" afterPath="$PROJECT_DIR$/web_app/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/__init__.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/adapters.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/adapters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/api.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/auth.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/auth.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/certs.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/certs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/compat.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/compat.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/cookies.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/cookies.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/exceptions.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/exceptions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/models.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/sessions.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/sessions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/status_codes.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/status_codes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/utils.py" afterPath="$PROJECT_DIR$/kids_env/Lib/site-packages/requests/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids_env/pip-selfcheck.json" afterPath="$PROJECT_DIR$/kids_env/pip-selfcheck.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/forms.py" afterPath="$PROJECT_DIR$/web_app/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/models.py" afterPath="$PROJECT_DIR$/web_app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/static/css/feed.css" afterPath="$PROJECT_DIR$/web_app/static/css/feed.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/static/css/index.css" afterPath="$PROJECT_DIR$/web_app/static/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/static/css/login.css" afterPath="$PROJECT_DIR$/web_app/static/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/static/css/post.css" afterPath="$PROJECT_DIR$/web_app/static/css/post.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/templates/feed.html" afterPath="$PROJECT_DIR$/web_app/templates/feed.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_app/views.py" afterPath="$PROJECT_DIR$/web_app/views.py" />
     </list>
@@ -65,23 +82,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SocialKids/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kids_info.web_app_commentmodel" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_commentmodel">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="525">
+              <caret line="117" column="15" lean-forward="false" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -99,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SocialKids/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="609">
+              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="e#644#685#0" expanded="true" />
               </folding>
@@ -111,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+            <state relative-caret-position="-378">
+              <caret line="114" column="36" lean-forward="true" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -123,8 +125,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kids_info.web_app_postmodel" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_postmodel">
+      <file leaf-file-name="kids_info.web_app_sessionmodel" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_sessionmodel">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -139,10 +141,20 @@
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reusable_models/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="399">
+              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -153,8 +165,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="777">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -168,6 +180,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -186,9 +199,10 @@
         <option value="$PROJECT_DIR$/web_app/admin.py" />
         <option value="$PROJECT_DIR$/kids_env/Lib/site-packages/pytz/__init__.py" />
         <option value="$PROJECT_DIR$/SocialKids/settings.py" />
+        <option value="$PROJECT_DIR$/web_app/models.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/logout.html" />
         <option value="$PROJECT_DIR$/SocialKids/urls.py" />
         <option value="$PROJECT_DIR$/web_app/forms.py" />
-        <option value="$PROJECT_DIR$/web_app/models.py" />
         <option value="$PROJECT_DIR$/web_app/views.py" />
       </list>
     </option>
@@ -221,7 +235,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,6 +258,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialKids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialKids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,8 +325,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialKids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialKids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reusable_models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,6 +349,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -533,13 +580,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1924" height="1038" extended-state="1" />
+    <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15897167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13955928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -570,16 +617,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SocialKids/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -637,7 +674,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -926,38 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_sessionmodel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_signupmodel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reusable_models/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kids_env/Lib/site-packages/pytz/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -965,7 +969,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_likemodel">
+    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_postmodel">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -977,10 +981,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_commentmodel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SocialKids/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+        <state relative-caret-position="525">
+          <caret line="117" column="15" lean-forward="false" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -995,7 +1019,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_commentmodel">
+    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_signupmodel">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1008,37 +1032,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_postmodel">
+    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_likemodel">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1053,10 +1047,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SocialKids/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="609">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="e#644#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reusable_models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/226af2bf/8b9ee96a-7733-4f4e-a4f5-5af8bbfd1432/kids_info.web_app_sessionmodel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="114" column="36" lean-forward="true" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>

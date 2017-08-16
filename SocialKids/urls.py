@@ -17,9 +17,10 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from web_app.views import signup_view, login_view, post_view, feed_view, like_view,comment_view
+from web_app.views import signup_view, login_view, post_view, feed_view, like_view, comment_view, logout_view
 
 urlpatterns = [
+    url(r'^logout/', logout_view),
     url(r'^comment/', comment_view),
     url(r'^like/', like_view),
     url(r'^feed/', feed_view),
