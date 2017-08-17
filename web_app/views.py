@@ -159,6 +159,7 @@ def logout_view(request):
         session_end = SessionModel.objects.filter(session_token=request.COOKIES.get('session_token')).first()
         if session_end:
             request.COOKIES.clear()
+            session_end.delete()
             user = check_validation(request)
             if user:
                 print "nope"
