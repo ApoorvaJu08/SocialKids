@@ -39,6 +39,10 @@ class PostModel(DateTimeModel):
     def comments(self):
         return CommentModel.objects.filter(post=self).order_by('created_on')
 
+    @property
+    def upvote_count(self):
+        return len(UpvoteModel.objects.first(comment=self))
+
 
 class LikeModel(DateTimeModel):
     user = models.ForeignKey(SignUpModel)
@@ -49,4 +53,12 @@ class CommentModel(DateTimeModel):
     user = models.ForeignKey(SignUpModel)
     post = models.ForeignKey(PostModel)
     comment_text = models.TextField(max_length=512)
+    has_up_voted = False
+
+
+class UpVoteModel(DateTimeModel):
+    user = models.ForeignKey(SignUpModel)
+    comment = models.ForeignKey(CommentModel)
+
+
 

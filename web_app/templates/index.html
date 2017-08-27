@@ -37,6 +37,11 @@
                     <div class="sub_heading">
                         Sign up to see photos and videos from your friends.
                         {{Date}}
+                    </div>
+                    <div class="login_error">
+                        {% if invalid %}
+                            Username doesn't exist.Please signup
+                        {% endif %}
                     </div>    
                     <form method="post">
                     {% csrf_token %}    

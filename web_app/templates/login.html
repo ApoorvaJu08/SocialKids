@@ -36,6 +36,11 @@
                     <div class="sub_heading">
                         Log In
                         {{Date}}
+                    </div>
+                    <div class="login_error">
+                        {% if invalid %}
+                            Username or password combination is incorrect
+                        {% endif %}
                     </div>    
                     <form method="post">
                     {% csrf_token %}     

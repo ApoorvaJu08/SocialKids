@@ -1,5 +1,5 @@
 from django import forms
-from models import SignUpModel, PostModel, LikeModel, CommentModel, SessionModel
+from models import SignUpModel, PostModel, LikeModel, CommentModel, UpVoteModel
 
 
 # kldfsnj
@@ -36,5 +36,8 @@ class CommentForm(forms.ModelForm):
         fields = ['comment_text', 'post']
 
 
-
+class UpVoteForm(forms.ModelForm):
+    class Meta:
+        model = UpVoteModel
+        fields = ['comment']
 

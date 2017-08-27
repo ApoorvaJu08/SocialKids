@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{% static '../static/css/feed.css' %}"/>
 
 </head>
-<body>
+<body><div>
 	<div class="container-fluid">
         <nav class="header" role="navigation">
         	<div class="row">
@@ -88,6 +88,15 @@
         									<strong class="comment_wala">{{ comment.user.username }}</strong>
         									{{ comment.comment_text }}
         								</div>
+        								<form method="POST" action="upvote">
+        								{% csrf_token %}
+        									<input type="hidden" name="comment" value="{{ comment.id }}">
+                    						{% if comment.has_upvoted %}
+                    							<input type="submit" class="btn btn-default" value=<i class="fa fa-sort-up" style="font-size:36px;color: red"></i>>
+                    						{% else %}
+                    							<input type="submit" class="btn btn-default" value=<i class="fa fa-sort-up" style="font-size:36px;color: grey"></i>>
+                    						{% endif %}
+        								</form>
         								<span class="comment_date">{{ comment.created_on }}</span>
         							</p>
         						{% endfor %}
