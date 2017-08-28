@@ -1,4 +1,4 @@
-#!e:\python projects\socialkids\kids_env\scripts\python.exe
+#!E:\Python projects\SocialKids\kids_env\Scripts\python.exe
 #
 # The Python Imaging Library.
 # $Id$

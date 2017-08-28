@@ -409,7 +409,7 @@ class ClearableFileInput(FileInput):
         context = super(ClearableFileInput, self).get_context(name, value, attrs)
         checkbox_name = self.clear_checkbox_name(name)
         checkbox_id = self.clear_checkbox_id(checkbox_name)
-        context.update({
+        context['widget'].update({
             'checkbox_name': checkbox_name,
             'checkbox_id': checkbox_id,
             'is_initial': self.is_initial(value),
@@ -463,7 +463,9 @@ class DateTimeBaseInput(TextInput):
         self.format = format if format else None
 
     def format_value(self, value):
-        return formats.localize_input(value, self.format or formats.get_format(self.format_key)[0])
+        if value is not None:
+            # localize_input() returns str on Python 2.
+            return force_text(formats.localize_input(value, self.format or formats.get_format(self.format_key)[0]))
 
 
 class DateInput(DateTimeBaseInput):

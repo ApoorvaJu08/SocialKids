@@ -17,22 +17,14 @@ import requests
 import json
 import os
 
-'''
-    imgur
-    client-id-->    3ff9d37f4d24f68
-    client-secret-->    7f139235b30f2a6104cc719f2256aafe2109a291
-    client-name-->  Social Kids
-    dots-- 'm1zlSpU2Gb0MrRMLPoGtGUsdFcVBNTAKxDyljfJkjkU',
-'''
-'''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'''
-Pdots_apikey = 'm1zlSpU2Gb0MrRMLPoGtGUsdFcVBNTAKxDyljfJkjkU'
-my_client = sendgrid.SendGridAPIClient(apikey='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')
+Pdots_apikey = ''
+my_client = sendgrid.SendGridAPIClient(apikey='')
 # Create your views here.
 
 
 # function to send emails using sendgrid
 def send_mail(email, subject, body):
-    from_email = Email("02vipsa@gmail.com")
+    from_email = Email("")
     to_email = Email(email)
     subject = subject
     content = Content("text/plain", body)
@@ -132,8 +124,8 @@ def is_abusive(caption):
 
 def post_view(request):
     user = check_validation(request)
-    client_id = '3ff9d37f4d24f68'
-    client_secret = '7f139235b30f2a6104cc719f2256aafe2109a291'
+    client_id = ''
+    client_secret = ''
 
     if user:
         if request.method == 'POST':
@@ -150,7 +142,7 @@ def post_view(request):
                     client = ImgurClient(client_id, client_secret)
                     post.image_url = client.upload_from_path(path, anon=True)['link']
                     # using clarifai api
-                    app = ClarifaiApp(api_key='a482d25e34214265817cf5de20498fa3')
+                    app = ClarifaiApp(api_key='')
                     model = app.models.get('nsfw-v1.0')
                     img_type = model.predict_by_url(post.image_url)
 
@@ -255,7 +247,6 @@ def up_vote_view(request):
 
 
 # def show_fav_user_post():
-
 
 
 def logout_view(request):

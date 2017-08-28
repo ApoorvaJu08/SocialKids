@@ -1,4 +1,4 @@
-#!e:\python projects\socialkids\kids_env\scripts\python.exe
+#!E:\Python projects\SocialKids\kids_env\Scripts\python.exe
 """PILdriver, an image-processing calculator using PIL.
 
 An instance of class PILDriver is essentially a software stack machine
